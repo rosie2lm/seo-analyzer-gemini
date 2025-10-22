@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEO Analyzer - AI-Powered Website Analysis</title>
+    <meta name="description" content="Analyze your website's SEO with AI-powered suggestions. Get detailed insights and improvement recommendations.">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <h1 class="logo">
+                    <i class="fas fa-chart-line"></i>
+                    SEO Analyzer
+                </h1>
+                <p class="subtitle">AI-Powered Website SEO Analysis</p>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Input Section -->
+            <section class="input-section">
+                <div class="input-card">
+                    <h2>Analyze Your Website</h2>
+                    <p>Enter a website URL to get comprehensive SEO analysis and AI-powered improvement suggestions.</p>
+
+                    <form id="analyzeForm" class="analyze-form">
+                        <div class="input-group">
+                            <input
+                                type="url"
+                                id="urlInput"
+                                placeholder="https://example.com"
+                                required
+                                class="url-input"
+                            >
+                            <button type="submit" class="analyze-btn">
+                                <i class="fas fa-search"></i>
+                                Analyze
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+
+            <!-- Loading Section -->
+            <section id="loadingSection" class="loading-section hidden">
+                <div class="loading-card">
+                    <div class="loading-spinner">
+                        <i class="fas fa-spinner fa-spin"></i>
+                    </div>
+                    <h3>Analyzing Website...</h3>
+                    <p>This may take a few moments. We're scanning your website and generating AI-powered suggestions.</p>
+                </div>
+            </section>
+
+            <!-- Results Section -->
+            <section id="resultsSection" class="results-section hidden">
+                <!-- SEO Score -->
+                <div class="score-card">
+                    <div class="score-header">
+                        <h3>SEO Score</h3>
+                        <div class="score-display">
+                            <span id="seoScore" class="score-number">0</span>
+                            <span class="score-total">/100</span>
+                        </div>
+                    </div>
+                    <p id="scoreExplanation" class="score-explanation"></p>
+                </div>
+
+                <!-- Analysis Results -->
+                <div class="analysis-grid">
+                    <!-- Structured Analysis -->
+                    <div class="analysis-card">
+                        <h3>
+                            <i class="fas fa-chart-bar"></i>
+                            Structured Analysis
+                        </h3>
+                        <div class="analysis-content" id="structuredAnalysis">
+                            <!-- Content will be populated by JavaScript -->
+                        </div>
+                    </div>
+
+                    <!-- AI-Powered Suggestions -->
+                    <div class="suggestions-card">
+                        <h3>
+                            <i class="fas fa-lightbulb"></i>
+                            AI-Powered Suggestions
+                        </h3>
+                        <div class="suggestions-content" id="aiSuggestions">
+                            <!-- Content will be populated by JavaScript -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blog Ideas -->
+                <div class="blog-ideas-card">
+                    <h3>
+                        <i class="fas fa-pen-fancy"></i>
+                        Creative Blog Post Ideas
+                    </h3>
+                    <div class="blog-ideas-content" id="blogIdeas">
+                        <!-- Content will be populated by JavaScript -->
+                    </div>
+                </div>
+
+                <!-- Performance Info -->
+                <div class="performance-card">
+                    <h4>Analysis Performance</h4>
+                    <div class="performance-stats" id="performanceStats">
+                        <!-- Content will be populated by JavaScript -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- Error Section -->
+            <section id="errorSection" class="error-section hidden">
+                <div class="error-card">
+                    <div class="error-icon">
+                        <i class="fas fa-exclamation-triangle"></i>
+                    </div>
+                    <h3>Analysis Failed</h3>
+                    <p id="errorMessage"></p>
+                    <button id="retryBtn" class="retry-btn">
+                        <i class="fas fa-redo"></i>
+                        Try Again
+                    </button>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>&copy; 2024 SEO Analyzer. Powered by AI technology.
+            </p>
+        </footer>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
